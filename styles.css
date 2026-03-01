@@ -247,9 +247,28 @@ body {
 .piggy-card:hover { transform: translateY(-6px); }
 .piggy-card.big { padding: 24px 28px; }
 
-.piggy-face { font-size: 3rem; line-height: 1; }
-.piggy-card.big .piggy-face { font-size: 4.5rem; }
-.piggy-card p { font-size: .8rem; font-weight: 700; color: var(--text-lt); margin-top: 6px; }
+.piggy-face {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--pink-lt);
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.piggy-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.piggy-card.big .piggy-face {
+  width: 110px;
+  height: 110px;
+}
+.piggy-card p { font-size: .8rem; font-weight: 700; color: var(--text-lt); margin-top: 8px; }
 
 /* =========================================================
    HOME — TOPIC CARDS
@@ -264,7 +283,7 @@ body {
   color: var(--text);
   margin-bottom: 6px;
 }
-.paw-divider { font-size: 1.3rem; letter-spacing: 6px; }
+/* paw-divider removed — kept for reference only */
 
 .cards-grid {
   display: grid;
@@ -604,4 +623,59 @@ body {
   .logo-text { display: none; }
   .cards-grid { grid-template-columns: 1fr 1fr; }
   .facts-row  { grid-template-columns: 1fr 1fr; }
+}
+
+/* =========================================================
+   MERCH TAB
+   ========================================================= */
+.merch-tab-btn {
+  background: rgba(255, 255, 255, .3);
+  border-color: rgba(255, 255, 255, .6);
+  font-style: italic;
+}
+.merch-tab-btn:hover { background: rgba(255, 255, 255, .45); }
+.merch-tab-btn.active {
+  background: #fff;
+  color: var(--pink);
+  border-color: #fff;
+}
+
+.merch-hero { background: linear-gradient(135deg, var(--pink-lt), var(--peach-lt)); }
+
+.merch-cta {
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.merch-grid {
+  margin-top: 40px;
+}
+
+.merch-coming-soon {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 60px 40px;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.merch-coming-icon {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.merch-coming-soon h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6rem;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.merch-coming-soon p {
+  color: var(--text-lt);
+  font-size: .95rem;
+  line-height: 1.6;
 }
