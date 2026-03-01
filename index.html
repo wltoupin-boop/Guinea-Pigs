@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guinea Pig Paradise 🐾</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🐹</span>
+        <span class="logo-text">Guinea Pig Paradise</span>
+      </div>
+      <nav class="tab-nav">
+        <button class="tab-btn active" data-tab="home">🏠 Home</button>
+        <button class="tab-btn" data-tab="cage">🏡 Cage Setup</button>
+        <button class="tab-btn" data-tab="food">🥦 Food &amp; Diet</button>
+        <button class="tab-btn" data-tab="care">💖 Daily Care</button>
+        <button class="tab-btn" data-tab="health">🩺 Health &amp; Vet</button>
+        <button class="tab-btn" data-tab="bonding">🤝 Bonding</button>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobileNav">
+      <button class="tab-btn active" data-tab="home">🏠 Home</button>
+      <button class="tab-btn" data-tab="cage">🏡 Cage Setup</button>
+      <button class="tab-btn" data-tab="food">🥦 Food &amp; Diet</button>
+      <button class="tab-btn" data-tab="care">💖 Daily Care</button>
+      <button class="tab-btn" data-tab="health">🩺 Health &amp; Vet</button>
+      <button class="tab-btn" data-tab="bonding">🤝 Bonding</button>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="content-wrap">
+
+    <!-- ========== HOME TAB ========== -->
+    <section class="tab-panel active" id="tab-home">
+      <div class="hero">
+        <div class="hero-bubbles">
+          <span class="bubble b1">🐹</span>
+          <span class="bubble b2">🌿</span>
+          <span class="bubble b3">🥕</span>
+          <span class="bubble b4">💛</span>
+          <span class="bubble b5">🐹</span>
+          <span class="bubble b6">🫐</span>
+          <span class="bubble b7">🌸</span>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">Welcome to<br /><span class="accent">Guinea Pig Paradise!</span></h1>
+          <p class="hero-subtitle">
+            Everything you need to keep your fluffy little friends happy, healthy, and loved. 🐾
+          </p>
+          <div class="hero-cta-row">
+            <button class="cta-btn" data-goto="cage">Get Started →</button>
+          </div>
+        </div>
+        <div class="hero-piggies">
+          <div class="piggy-card">
+            <div class="piggy-face">🐹</div>
+            <p>Whiskers</p>
+          </div>
+          <div class="piggy-card big">
+            <div class="piggy-face">🐹</div>
+            <p>Biscuit</p>
+          </div>
+          <div class="piggy-card">
+            <div class="piggy-face">🐹</div>
+            <p>Peanut</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick nav cards -->
+      <div class="section-title-row">
+        <h2>Explore Topics</h2>
+        <div class="paw-divider">🐾🐾🐾</div>
+      </div>
+      <div class="cards-grid">
+        <div class="topic-card" data-goto="cage">
+          <div class="card-icon">🏡</div>
+          <h3>Cage Setup</h3>
+          <p>Learn the space requirements, bedding, hides, and enrichment your guinea pig needs.</p>
+          <span class="card-link">Learn more →</span>
+        </div>
+        <div class="topic-card" data-goto="food">
+          <div class="card-icon">🥦</div>
+          <h3>Food &amp; Diet</h3>
+          <p>Discover what to feed, how often, and which foods are safe or dangerous.</p>
+          <span class="card-link">Learn more →</span>
+        </div>
+        <div class="topic-card" data-goto="care">
+          <div class="card-icon">💖</div>
+          <h3>Daily Care</h3>
+          <p>From nail trims to grooming — your daily and weekly care checklist.</p>
+          <span class="card-link">Learn more →</span>
+        </div>
+        <div class="topic-card" data-goto="health">
+          <div class="card-icon">🩺</div>
+          <h3>Health &amp; Vet</h3>
+          <p>Spot signs of illness early and know when to visit an exotic vet.</p>
+          <span class="card-link">Learn more →</span>
+        </div>
+        <div class="topic-card" data-goto="bonding">
+          <div class="card-icon">🤝</div>
+          <h3>Bonding</h3>
+          <p>Tips for socializing, bonding guinea pigs together, and handling.</p>
+          <span class="card-link">Learn more →</span>
+        </div>
+      </div>
+
+      <!-- Fun facts strip -->
+      <div class="fun-facts">
+        <h2 class="facts-title">Did You Know? 🌟</h2>
+        <div class="facts-row">
+          <div class="fact-item">
+            <span class="fact-emoji">💬</span>
+            <p>Guinea pigs make over <strong>11 different sounds</strong> to communicate!</p>
+          </div>
+          <div class="fact-item">
+            <span class="fact-emoji">😴</span>
+            <p>They sleep with their <strong>eyes open</strong> — so always on alert!</p>
+          </div>
+          <div class="fact-item">
+            <span class="fact-emoji">🏃</span>
+            <p>A happy guinea pig does a <strong>"popcorning"</strong> jump when excited!</p>
+          </div>
+          <div class="fact-item">
+            <span class="fact-emoji">🫂</span>
+            <p>They are <strong>social animals</strong> — they thrive in pairs or groups!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CAGE SETUP TAB ========== -->
+    <section class="tab-panel" id="tab-cage">
+      <div class="page-hero cage-hero">
+        <div class="page-hero-emoji">🏡</div>
+        <h1>Cage Setup &amp; Requirements</h1>
+        <p class="page-desc">
+          Guinea pigs need <strong>much more space</strong> than most people think! A happy pig lives in a
+          large, enriched environment. Here's everything you need to know about creating the perfect
+          home for your furry friend — from minimum cage sizes and bedding choices to hides, hay racks,
+          and enrichment. Watch the videos below to see real cage setups and tours that can inspire your
+          own piggy palace!
+        </p>
+        <div class="desc-tags">
+          <span class="tag">📐 Min. 10.5 sq ft for 2 pigs</span>
+          <span class="tag">🌿 Safe bedding matters</span>
+          <span class="tag">🏠 Hides &amp; enrichment</span>
+          <span class="tag">🌡️ 65–75°F ideal temp</span>
+        </div>
+      </div>
+      <div class="video-section">
+        <h2 class="video-section-title">📺 Video Guides</h2>
+        <p class="video-section-sub">Add your favorite cage setup videos below!</p>
+        <div class="video-grid" id="video-grid-cage">
+          <!-- VIDEO CARD TEMPLATE — copy and paste to add more videos -->
+          <div class="video-card">
+            <div class="video-placeholder">
+              <!-- Replace the src with your YouTube embed URL -->
+              <!-- Example: src="https://www.youtube.com/embed/VIDEO_ID" -->
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Cage Setup Video 1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Cage Setup Video 1</h3>
+              <p class="video-desc">Add a short description of this video here.</p>
+            </div>
+          </div>
+          <!-- ADD MORE VIDEO CARDS HERE -->
+        </div>
+        <button class="add-video-btn" data-section="cage">+ Add Video</button>
+      </div>
+    </section>
+
+    <!-- ========== FOOD & DIET TAB ========== -->
+    <section class="tab-panel" id="tab-food">
+      <div class="page-hero food-hero">
+        <div class="page-hero-emoji">🥦</div>
+        <h1>Food &amp; Diet</h1>
+        <p class="page-desc">
+          A balanced diet is key to a long, healthy life for your guinea pig. Their diet should be
+          made up of <strong>unlimited timothy hay</strong> (80%), fresh leafy greens &amp; veggies (15%),
+          and a small amount of high-quality pellets (5%). Guinea pigs cannot produce their own
+          Vitamin C, so daily fresh vegetables are essential! Learn what's safe, what to avoid, and
+          how to build a diet your piggies will love.
+        </p>
+        <div class="desc-tags">
+          <span class="tag">🌾 Unlimited timothy hay</span>
+          <span class="tag">🥬 Daily fresh veggies</span>
+          <span class="tag">💊 Vitamin C essential</span>
+          <span class="tag">❌ No iceberg lettuce</span>
+        </div>
+      </div>
+      <div class="video-section">
+        <h2 class="video-section-title">📺 Video Guides</h2>
+        <p class="video-section-sub">Add your favorite food &amp; diet videos below!</p>
+        <div class="video-grid" id="video-grid-food">
+          <div class="video-card">
+            <div class="video-placeholder">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Food &amp; Diet Video 1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Food &amp; Diet Video 1</h3>
+              <p class="video-desc">Add a short description of this video here.</p>
+            </div>
+          </div>
+          <!-- ADD MORE VIDEO CARDS HERE -->
+        </div>
+        <button class="add-video-btn" data-section="food">+ Add Video</button>
+      </div>
+    </section>
+
+    <!-- ========== DAILY CARE TAB ========== -->
+    <section class="tab-panel" id="tab-care">
+      <div class="page-hero care-hero">
+        <div class="page-hero-emoji">💖</div>
+        <h1>Daily Care</h1>
+        <p class="page-desc">
+          Guinea pigs thrive on <strong>routine and consistency</strong>! Daily care involves freshening
+          their hay, providing fresh water, cleaning their food bowl, and spending quality time with them.
+          Weekly tasks include a deeper cage clean and nail check. Every few weeks you'll want to trim
+          nails and check teeth. Long-haired breeds need regular brushing too. Use the videos below
+          to master every aspect of guinea pig grooming and care!
+        </p>
+        <div class="desc-tags">
+          <span class="tag">🌿 Daily hay &amp; water refresh</span>
+          <span class="tag">🧹 Weekly cage clean</span>
+          <span class="tag">✂️ Monthly nail trims</span>
+          <span class="tag">🪮 Brushing for long-haired</span>
+        </div>
+      </div>
+      <div class="video-section">
+        <h2 class="video-section-title">📺 Video Guides</h2>
+        <p class="video-section-sub">Add your favorite daily care videos below!</p>
+        <div class="video-grid" id="video-grid-care">
+          <div class="video-card">
+            <div class="video-placeholder">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Daily Care Video 1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Daily Care Video 1</h3>
+              <p class="video-desc">Add a short description of this video here.</p>
+            </div>
+          </div>
+          <!-- ADD MORE VIDEO CARDS HERE -->
+        </div>
+        <button class="add-video-btn" data-section="care">+ Add Video</button>
+      </div>
+    </section>
+
+    <!-- ========== HEALTH & VET TAB ========== -->
+    <section class="tab-panel" id="tab-health">
+      <div class="page-hero health-hero">
+        <div class="page-hero-emoji">🩺</div>
+        <h1>Health &amp; Vet Care</h1>
+        <p class="page-desc">
+          Guinea pigs are <strong>prey animals</strong>, which means they instinctively hide signs of
+          illness. It's crucial to do daily health checks and know what's normal for your pet. Common
+          health issues include respiratory infections, dental problems, skin conditions, and bladder
+          stones. Always seek an <strong>exotic vet</strong> experienced with guinea pigs — not all
+          vets are trained for small animals. Check out the videos below to learn how to spot illness
+          early and what to expect at the vet!
+        </p>
+        <div class="desc-tags">
+          <span class="tag">👁️ Daily health checks</span>
+          <span class="tag">🏥 Exotic vet required</span>
+          <span class="tag">⚠️ They hide illness</span>
+          <span class="tag">🦷 Dental issues common</span>
+        </div>
+      </div>
+      <div class="video-section">
+        <h2 class="video-section-title">📺 Video Guides</h2>
+        <p class="video-section-sub">Add your favorite health &amp; vet videos below!</p>
+        <div class="video-grid" id="video-grid-health">
+          <div class="video-card">
+            <div class="video-placeholder">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Health Video 1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Health &amp; Vet Video 1</h3>
+              <p class="video-desc">Add a short description of this video here.</p>
+            </div>
+          </div>
+          <!-- ADD MORE VIDEO CARDS HERE -->
+        </div>
+        <button class="add-video-btn" data-section="health">+ Add Video</button>
+      </div>
+    </section>
+
+    <!-- ========== BONDING TAB ========== -->
+    <section class="tab-panel" id="tab-bonding">
+      <div class="page-hero bonding-hero">
+        <div class="page-hero-emoji">🤝</div>
+        <h1>Bonding &amp; Handling</h1>
+        <p class="page-desc">
+          Guinea pigs are incredibly social creatures — in the wild, they live in herds! Keeping at least
+          <strong>two guinea pigs</strong> together is strongly recommended for their emotional well-being.
+          Bonding two guinea pigs takes patience and a proper introduction process. When it comes to
+          handling, start slow, always support their bottom, and let them come to you. With time and
+          consistency, guinea pigs can become very affectionate and confident companions!
+        </p>
+        <div class="desc-tags">
+          <span class="tag">👫 Keep in pairs or groups</span>
+          <span class="tag">🐾 Slow introductions</span>
+          <span class="tag">🙌 Support their bottom</span>
+          <span class="tag">❤️ Build trust daily</span>
+        </div>
+      </div>
+      <div class="video-section">
+        <h2 class="video-section-title">📺 Video Guides</h2>
+        <p class="video-section-sub">Add your favorite bonding &amp; handling videos below!</p>
+        <div class="video-grid" id="video-grid-bonding">
+          <div class="video-card">
+            <div class="video-placeholder">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Bonding Video 1"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">Bonding &amp; Handling Video 1</h3>
+              <p class="video-desc">Add a short description of this video here.</p>
+            </div>
+          </div>
+          <!-- ADD MORE VIDEO CARDS HERE -->
+        </div>
+        <button class="add-video-btn" data-section="bonding">+ Add Video</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== ADD VIDEO MODAL ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h2>Add a Video</h2>
+      <p>Paste a YouTube embed URL and add a title &amp; description.</p>
+      <label>YouTube Embed URL
+        <input type="text" id="modalUrl" placeholder="https://www.youtube.com/embed/VIDEO_ID" />
+      </label>
+      <label>Video Title
+        <input type="text" id="modalTitle" placeholder="My Guinea Pig Video" />
+      </label>
+      <label>Short Description
+        <textarea id="modalDesc" placeholder="A short description of this video..."></textarea>
+      </label>
+      <button class="cta-btn" id="modalSave">Add Video</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>🐹 Made with love for guinea pig lovers everywhere &nbsp;|&nbsp; Guinea Pig Paradise 🐾</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
